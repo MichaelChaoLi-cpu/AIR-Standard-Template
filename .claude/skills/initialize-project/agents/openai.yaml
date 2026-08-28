@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize Project"
+  short_description: "Create or align a repository's project foundation"
+  default_prompt: "Use $initialize-project to initialize this project with the team standard."

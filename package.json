@@ -1,0 +1,32 @@
+{
+  "name": "nayoshi",
+  "version": "0.0.1",
+  "description": "Install Nayoshi general-project skills for Codex and Claude.",
+  "type": "module",
+  "bin": {
+    "nayoshi": "./bin/nayoshi.mjs"
+  },
+  "files": [
+    "bin/",
+    ".codex/skills/",
+    ".claude/skills/",
+    "README.md",
+    "README-ZH.md",
+    "README-JP.md"
+  ],
+  "scripts": {
+    "test": "node --test tests/installer.test.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "codex",
+    "claude",
+    "skills",
+    "dvc",
+    "project-template"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  }
+}

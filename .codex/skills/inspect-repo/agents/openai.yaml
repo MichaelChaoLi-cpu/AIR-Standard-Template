@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inspect Repository"
+  short_description: "Audit repository structure, tooling, and readiness"
+  default_prompt: "Use $inspect-repo to audit this repository and report prioritized findings."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Data Version"
+  short_description: "Track datasets and artifacts with reproducible versions"
+  default_prompt: "Use $manage-data-version to inspect and update this project's DVC state."

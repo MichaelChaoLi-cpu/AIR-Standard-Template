@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Git Version"
+  short_description: "Prepare safe, reviewable Git version changes"
+  default_prompt: "Use $manage-git-version to prepare a safe Git version update for this project."
