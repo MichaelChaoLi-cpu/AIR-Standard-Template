@@ -51,8 +51,8 @@ Options:
   --version            Show the installed Nayoshi package version.
 
 Examples:
-  npx --yes nayoshi@latest --target .
-  npx --yes nayoshi@${CLI_VERSION} --target .
+  npx --yes github:MichaelChaoLi-cpu/AIR-Standard-Template#version/latest --target .
+  npx --yes github:MichaelChaoLi-cpu/AIR-Standard-Template#version/${CLI_VERSION} --target .
   nayoshi --source ../Nayoshi --target ./my-project
 `);
 }
@@ -287,6 +287,8 @@ function installSkills(sources, targetRoot, force, sourceVersion, gitignore) {
       schema: "nayoshi-install/1",
       package: PACKAGE_NAME,
       version: sourceVersion,
+      releaseBranch: `version/${sourceVersion}`,
+      latestBranch: "version/latest",
       skills: [...NAYOSHI_SKILLS],
       targets: SKILL_TARGETS.map((target) => target.label.toLowerCase()),
       message: "生在744番地。",
@@ -333,6 +335,7 @@ function installSkills(sources, targetRoot, force, sourceVersion, gitignore) {
 
     if (gitignore.changed) {
       if (existsSync(gitignore.path)) {
+        mkdirSync(dirname(gitignoreBackup), { recursive: true });
         renameSync(gitignore.path, gitignoreBackup);
         gitignoreBackedUp = true;
       }

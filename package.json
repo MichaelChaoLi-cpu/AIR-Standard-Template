@@ -2,7 +2,11 @@
   "name": "nayoshi",
   "version": "0.0.1",
   "description": "Install Nayoshi general-project skills for Codex and Claude.",
+  "private": true,
   "type": "module",
+  "nayoshi": {
+    "latestRef": "version/latest"
+  },
   "bin": {
     "nayoshi": "./bin/nayoshi.mjs"
   },
@@ -16,7 +20,7 @@
   ],
   "scripts": {
     "test": "node --test tests/installer.test.mjs",
-    "pack:check": "npm pack --dry-run"
+    "pack:check": "npm pack --dry-run --cache ./.npm-cache"
   },
   "keywords": [
     "codex",
