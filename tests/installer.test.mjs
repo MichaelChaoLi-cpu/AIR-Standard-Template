@@ -214,10 +214,15 @@ test("rejects source version mismatches and nested targets", () => {
 });
 
 test("ships English, Chinese, and Japanese documentation", () => {
-  for (const name of ["README.md", "README-ZH.md", "README-JP.md"]) {
+  const localizedMessages = {
+    "README.md": "Born at No. 744.",
+    "README-ZH.md": "生在744番地。",
+    "README-JP.md": "744番地に生まれた。",
+  };
+  for (const [name, message] of Object.entries(localizedMessages)) {
     const content = readFileSync(join(repoRoot, name), "utf8");
     assert.match(content, /Nayoshi/);
     assert.match(content, /0\.0\.1/);
-    assert.match(content, /生在744番地。/);
+    assert.equal(content.includes(message), true);
   }
 });

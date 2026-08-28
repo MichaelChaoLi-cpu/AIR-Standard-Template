@@ -6,7 +6,7 @@
 
 **v0.0.1 · Nayoshi**
 
-> 生在744番地。
+> 744番地に生まれた。
 
 [English](README.md) · [中文](README-ZH.md)
 
@@ -196,4 +196,4 @@ Nayoshi は `MAJOR.MINOR.PATCH` を使用します。
 
 現在のリリース：`0.0.1`。
 
-> 生在744番地。
+> 744番地に生まれた。

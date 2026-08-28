@@ -6,7 +6,7 @@ separate and explicit.
 
 **v0.0.1 · Nayoshi**
 
-> 生在744番地。
+> Born at No. 744.
 
 [中文](README-ZH.md) · [日本語](README-JP.md)
 
@@ -193,4 +193,4 @@ Nayoshi uses `MAJOR.MINOR.PATCH` versioning.
 
 Current release: `0.0.1`.
 
-> 生在744番地。
+> Born at No. 744.
